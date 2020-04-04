@@ -16,6 +16,7 @@
 </style>
 
 <body>
+   <h2>Register Student</h2>
    <form action="/addstudent" method="POST">
       <div class="form-group">
          <label for="exampleInputEmail1">Surname</label>
@@ -45,6 +46,15 @@
       <div class="form-group">
          <label for="exampleInputEmail1">Email</label>
          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+      </div>
+      <h3>Tuition Plan</h3>
+      <div class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="tuitionPlan" id="inlineRadio1" value="350000" required>
+         <label class="form-check-label" for="inlineRadio1">Installment</label>
+      </div>
+      <div class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="tuitionPlan" id="inlineRadio2" value="1500000">
+         <label class="form-check-label" for="inlineRadio2" >Lumpsum</label>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
    </form>
